@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Ionicons } from '@expo/vector-icons';
 import {
   View,
   ViewPropTypes,
@@ -75,6 +76,7 @@ function TagSelectItem (props) {
           >
             {props.label}
           </Text>
+          <Ionicons name={`md-${props.selected ? "checkmark" : "add"}`} size={25} color={!props.selected ? "#73F440" : "#000"} />
         </View>
       </TouchableOpacity>
     </View>
@@ -89,7 +91,9 @@ const styles = StyleSheet.create({
   inner: {
     padding: 10,
     borderWidth: 1,
-    borderRadius: 6
+    borderRadius: 6,
+    flexDirection:'row',
+    alignItems:'center'
   },
   defaultInner: {
     backgroundColor: '#f8f9fa',
