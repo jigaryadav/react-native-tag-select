@@ -76,7 +76,7 @@ function TagSelectItem (props) {
           >
             {props.label}
           </Text>
-          <Ionicons name={`md-${props.selected ? "checkmark" : "add"}`} size={25} color={!props.selected ? "#73F440" : "#000"} />
+          <Ionicons name={`md-${props.selected ? "checkmark" : "add"}`} size={15} color={!props.selected ? "#73F440" : "#000"} />
         </View>
       </TouchableOpacity>
     </View>
